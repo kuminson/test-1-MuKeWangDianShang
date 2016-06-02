@@ -34,14 +34,27 @@ header nav .header_nav ul li{ width:100px; height:35px; float:left; line-height:
 header nav .header_nav ul li a{ width:100%; height:100%; color:#FFF;}
 header nav .header_nav ul li:hover{ background-color:#4593FD;}
 /*商品分类*/
-header aside{ width:1000px; position:absolute; top:150px; left:50%; margin-left:-500px;}
+/*一级菜单*/
+header aside{ width:1000px; position:absolute; top:150px; left:50%; margin-left:-500px; display:none;}
 header aside ul{ width:190px;}
-header aside ul li{ width:100%; height:63px; background-color:#4593FD; border-top:1px solid #5AA1FE; border-bottom:1px solid #3487F2;}
+header aside ul li{ width:100%; height:63px; background-color:#4593FD; border-top:1px solid #5AA1FE; border-bottom:1px solid #3487F2; background-image:url(../img/%E7%AD%9B%E9%80%89%E9%A1%B5/%E7%AE%AD%E5%A4%B42.png); background-repeat:no-repeat; background-position:172px 19px;}
 header aside ul li:first-child{ border-top:none;}
 header aside ul li:last-child{ border-bottom:none;}
 header aside ul li h3{ display:inline-block; margin:13px 10px 0 10px; color:#FFF; font-size:14px;}
+header aside ul li h3 a{ color:#FFF;}
 header aside ul li span{ width:48px; height:20px; display:inline-block; border-radius:10px; background-color:#106AC0; line-height:20px; text-align:center; color:#FFF; font-size:12px;}
+header aside ul li span a{ color:#FFF;}
 header aside ul li p{ margin:5px 0 0 10px; color:#C2D9F8; font-size:12px;}
+/*二级菜单*/
+header aside .header_aside_second{ width:570px; position:absolute; left:190px; top:0px; border:1px solid #DDD; height:auto; display:none;}
+header aside .header_aside_second ol{ float:left; margin-left:20px;}
+header aside .header_aside_second ol li{ line-height:42px; float:left; border-bottom:1px solid #DDD; }
+header aside .header_aside_second ol li span{ width:72px; display:block; float:left; font-size:12px;}
+header aside .header_aside_second ol li span a{ color:#4B88DA; font-weight:bold;}
+header aside .header_aside_second ol li p{ width:430px; display:block; float:left; font-size:12px; }
+header aside .header_aside_second ol li p a:hover{ color:#FF7300;}
+
+
 
 
 
