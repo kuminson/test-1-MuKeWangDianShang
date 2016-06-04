@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>筛选页</title>
+<!--引入css初始化文件-->
 <link type="text/css" rel="stylesheet" href="css/reset.css">
+<!--引入css样式-->
 <link type="text/css" rel="stylesheet" href="css/筛选页.css">
+<!--引入jquery-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--引入js-->
 <script type="text/javascript" src="js/筛选页.js"></script>
 </head>
 
@@ -32,7 +37,7 @@
         <!--导航条-->
         <nav>
             <div class="header_nav">
-                <div class="category">全部商品分类<i></i></div>
+                <div id="header_nav_category" class="category">全部商品分类<i></i></div>
                 <ul>
                     <li><a href="#">数码城</a></li>
                     <li><a href="#">天黑黑</a></li>
@@ -44,9 +49,9 @@
             </div>
         </nav>
         <!--商品分类-->
-        <aside>
+        <aside id="header_aside">
             <!--一级菜单-->
-            <ul>
+            <ul id="header_aside_first">
                 <li>
                     <h3><a href="#">手机</a>&nbsp;<a href="#">数码</a></h3>
                     <span><a href="#">合约机</a></span>
@@ -72,12 +77,8 @@
                 </li>
             </ul>
             <!--二级菜单-->
-            <div class="header_aside_second">
+            <div id="header_aside_second" class="header_aside_second">
                 <ol>
-                    <li>
-                        <span><a href="#">手机通讯</a></span>
-                        <p><a href="#">手机</a>&nbsp;<a href="#">对讲机</a>&nbsp;<a href="#">以旧换新</a>&nbsp;<a href="#">手机维修</a></p>
-                    </li>
                     <li>
                         <span><a href="#">运营商</a></span>
                         <p><a href="#">合约机</a>&nbsp;<a href="#">办套餐</a>&nbsp;<a href="#">选号码</a>&nbsp;<a href="#">装宽带</a>&nbsp;<a href="#">中国移动</a>&nbsp;<a href="#">中国联通</a>&nbsp;<a href="#">中国电信</a></p>
@@ -127,10 +128,6 @@
                 </ol>
                 <ol>
                     <li>
-                        <span><a href="#">手机通讯</a></span>
-                        <p><a href="#">手机</a>&nbsp;<a href="#">对讲机</a>&nbsp;<a href="#">以旧换新</a>&nbsp;<a href="#">手机维修</a></p>
-                    </li>
-                    <li>
                         <span><a href="#">运营商</a></span>
                         <p><a href="#">合约机</a>&nbsp;<a href="#">办套餐</a>&nbsp;<a href="#">选号码</a>&nbsp;<a href="#">装宽带</a>&nbsp;<a href="#">中国移动</a>&nbsp;<a href="#">中国联通</a>&nbsp;<a href="#">中国电信</a></p>
                     </li>
@@ -178,10 +175,6 @@
                     </li>
                 </ol>
                 <ol>
-                    <li>
-                        <span><a href="#">手机通讯</a></span>
-                        <p><a href="#">手机</a>&nbsp;<a href="#">对讲机</a>&nbsp;<a href="#">以旧换新</a>&nbsp;<a href="#">手机维修</a></p>
-                    </li>
                     <li>
                         <span><a href="#">运营商</a></span>
                         <p><a href="#">合约机</a>&nbsp;<a href="#">办套餐</a>&nbsp;<a href="#">选号码</a>&nbsp;<a href="#">装宽带</a>&nbsp;<a href="#">中国移动</a>&nbsp;<a href="#">中国联通</a>&nbsp;<a href="#">中国电信</a></p>
