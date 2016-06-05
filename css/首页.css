@@ -49,7 +49,7 @@ header aside:hover{ display:block;}
 header aside ul{ width:190px; position:relative; z-index:5;}
 header aside ul li{ width:100%; height:63px; background-color:#4593FD; border-top:1px solid #5AA1FE; border-bottom:1px solid #3487F2; background-image:url(../img/%E7%AD%9B%E9%80%89%E9%A1%B5/%E7%AE%AD%E5%A4%B42.png); background-repeat:no-repeat; background-position:172px 19px;}
 header aside ul li:first-child{ border-top:none; padding-top:2px;}
-header aside ul li:last-child{ border-bottom:none;}
+header aside ul li:last-child{ border-bottom:none; padding-bottom:5px;}
 header aside ul li h3{ display:inline-block; margin:13px 10px 0 10px; color:#FFF; font-size:14px;}
 header aside ul li h3 a{ color:#FFF;}
 header aside ul li span{ width:48px; height:20px; display:inline-block; border-radius:10px; background-color:#106AC0; line-height:20px; text-align:center; color:#FFF; font-size:12px;}
@@ -78,9 +78,9 @@ header aside .header_aside_second ol li p a:hover{ color:#FF7300;}
 .main_banner_box{position:absolute; left:0; bottom:10px; text-align:center; width:100%;}
 .main_banner_box a{ width:20px; height:5px; display:inline-block; background-color:#FFF;}
 .main_banner_box .active{ background-color:#ff8c00;}
-.banner_banner{ width:810px; height:325px;  margin-bottom:15px; float:right;}
+.banner_banner{ width:810px; height:330px;  margin-bottom:15px; float:right;}
 .banner_pic{ width:1620px; height:326px; }
-.banner_pic a{ width:810px; height:326px;}
+.banner_pic a{ width:810px; height:326px; }
 
 /*商品标题*/
 .main_tit{ height:44px; font-family:"微软雅黑"; line-height:44px; clear:both; margin-bottom:15px;}

@@ -8,6 +8,8 @@ $(function(){
         });
     }
     
+    
+    
     //常用变量
     var list_zero = $("#header_nav_category");
     var list_first = $("#header_aside");
@@ -42,7 +44,54 @@ $(function(){
     shlist(list_second,list_second,"mouseover","block");
     shlist(list_second_ol,list_first,"mouseover","block");
     
-    //鼠标划出二级菜单隐藏一级菜单、全部二级菜单
+    //变量
+    var banner_main = $(".banner_pic a img");
+    var banner_box = $(".banner_box a");
+    var tit_pic1 = $(".tit_pic1 a img");
+    var tit_box1 = $(".tit_box1 a");
+    var tit_pic2 = $(".tit_pic2 a img");
+    var tit_box2 = $(".tit_box2 a");
+
+    
+    //封装自动轮播和手动轮播
+    function banner_auto(main,box,top,sta){
+        var i=0;
+        if(timer){
+            clearInterval(timer);
+        }
+        var timer = setInterval(function(){
+            if(main.css("margin-top").slice(0,-2) < top*[box.length-2]+parseInt(sta)){
+                i = 0;
+                main.css("margin-top",sta);
+            }
+            else{
+                i++;
+            }
+            main.animate({marginTop:[top*i]+"px"});
+            box.removeClass("active");
+            box.eq(i).addClass("active");
+        },2000);
+        
+        for(var j=0; j<box.length; j++){
+            !function(j){
+                box.eq(j).bind("mouseover",function(){
+                main.css("margin-top",[top*j]+"px");
+                box.removeClass("active");
+                box.eq(j).addClass("active");
+                i = j;
+                });
+            }(j);
+        }
+
+    }
+    
+    //banner自动轮播
+    banner_auto(banner_main,banner_box,-330,"0px");
+    
+    
+    //侧边栏自动轮播
+    banner_auto(tit_pic1,tit_box1,-400,"0px");
+    banner_auto(tit_pic2,tit_box2,-400,"0px");
 
 
 
