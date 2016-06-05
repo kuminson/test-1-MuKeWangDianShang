@@ -16,15 +16,10 @@ $(function(){
     var list_second_ol = $("#header_aside_second ol");
     
 
-    //鼠标划过分类菜单显示一级菜单
-    shlist(list_zero,list_first,"mouseover","block");
-    
-    //鼠标划出分类菜单隐藏一级菜单
-    shlist(list_zero,list_first,"mouseout","none");
     
     //鼠标划过一级菜单显示一级菜单
     shlist(list_first,list_first,"mouseover","block");
-    
+    shlist(list_first,list_second,"mouseover","block");
     
     for(var i=0; i<list_first_li.length; i++){
         !function(i){
@@ -39,8 +34,8 @@ $(function(){
         }(i);
     }
     //鼠标划出一级菜单隐藏一级菜单
-    shlist(list_first,list_first,"mouseout","none");
     shlist(list_first,list_second_ol,"mouseout","none");
+    shlist(list_first,list_second,"mouseout","none");
     
     //鼠标划过二级菜单显示一级菜单、二级菜单自身
     shlist(list_second,list_first,"mouseover","block");
@@ -52,33 +47,6 @@ $(function(){
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

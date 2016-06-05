@@ -41,7 +41,7 @@ header nav .header_nav ul li:hover{ background-color:#4593FD;}
 /*一级菜单*/
 header aside{ width:1000px; position:absolute; top:150px; left:50%; margin-left:-500px; display:none;}
 header aside:hover{ display:block;}
-header aside ul{ width:190px;}
+header aside ul{ width:190px; position:relative; z-index:5;}
 header aside ul li{ width:100%; height:63px; background-color:#4593FD; border-top:1px solid #5AA1FE; border-bottom:1px solid #3487F2; background-image:url(../img/%E7%AD%9B%E9%80%89%E9%A1%B5/%E7%AE%AD%E5%A4%B42.png); background-repeat:no-repeat; background-position:172px 19px;}
 header aside ul li:first-child{ border-top:none;}
 header aside ul li:last-child{ border-bottom:none;}
@@ -51,9 +51,9 @@ header aside ul li span{ width:48px; height:20px; display:inline-block; border-r
 header aside ul li span a{ color:#FFF;}
 header aside ul li p{ margin:5px 0 0 10px; color:#C2D9F8; font-size:12px;}
 /*二级菜单*/
-header aside .header_aside_second{ width:570px; position:absolute; left:190px; top:0px; border:1px solid #DDD; height:auto; display:block; background-color:#FFF;}
+header aside .header_aside_second{ width:570px; position:absolute; left:190px; top:0px; border:1px solid #DDD; height:auto; display:block; background-color:#FFF; margin-left:-1px;}
 header aside .header_aside_second:hover{ display:block;}
-header aside .header_aside_second ol{ float:left; margin-left:20px; display:none; background-color:#FFF;}
+header aside .header_aside_second ol{ float:left; padding-left:20px; display:none; background-color:#FFF;}
 header aside .header_aside_second ol:first-child{ }
 header aside .header_aside_second ol:hover{ display:block;}
 header aside .header_aside_second ol li{ line-height:42px; float:left; border-bottom:1px solid #DDD; }
